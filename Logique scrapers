@@ -1,0 +1,12 @@
+Scraper niveau 1: la liste des livres permettant de comparer avec l'ancienne requête et voir s'il y en a des nouveaux.
+Scraper niveau 2: clique sur livre vers plus d'info, notamment une description permettant de positionner le livre.
+
+Niveau 1
+En fonction d'une maison d'édition
+Va chercher contenu antérieur dans mongo db
+Obtient contenu Nokogiri
+Compare contenu obtenu versus contenu antérieur
+Objets JSON
+Rien de nouveau (journal de scrape)
+Nouveau: go get details
+
