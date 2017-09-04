@@ -2,6 +2,7 @@ require "rubygems"
 require "nokogiri"
 require "open-uri" ##si le fichier est sur Internet
 require "csv"
+require "pp"
 
 resultat = Array.new
 precedent = Array.new
