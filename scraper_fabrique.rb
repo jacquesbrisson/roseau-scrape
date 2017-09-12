@@ -14,7 +14,7 @@ CSV.foreach(data_file) do |row| ## Pas la bonne methode!
 end
 
 ## Va chercher data sur site cible et construit Array
-page = Nokogiri::HTML(open("http://www.lafabrique.fr/catalogue.php?mode=new"))
+page = Nokogiri::HTML(open("http://lafabrique.fr/category/nouveautes/"))
 page.css('html body div#global div#Centrale div.BlocListeLivre').each do |el|
   resultat << el.at_css('div.BlocListeLivreAuteur.LienBlocListeLivre').text
   resultat << el.at_css('div.BlocListeLivreTitre.LienBlocListeLivre').text
